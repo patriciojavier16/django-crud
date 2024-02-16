@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'djangocrud.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'CoursesDB',
+        'NAME': 'StudentsDB',
         'USER':'postgres',
         'PASSWORD':'12345',
         'HOST':'localhost',
