@@ -23,8 +23,6 @@
                 <input type="text" name="nombre" placeholder="Ingrese el nombre: " class="form-control mb-2">
                 <label for="apellido">Apellido</label>
                 <input type="text" name="apellido" placeholder="Ingrese el apellido: " class="form-control mb-2">
-                <label for="genero">Género</label>
-                <input type="text" name="genero" placeholder="Ingrese el género: " class="form-control mb-2">
                 <button class="btn btn-success">Save</button>
             </form>
             {% for student in students %}
@@ -33,7 +31,6 @@
                         <h4>{{student.dni}}</h4>
                         <p>{{student.nombre}}</p>
                         <p>{{student.apellido}}</p>
-                        <p>{{student.genero}}</p>
                     </div>
                     <form action="{% url 'deleteStudent' student.id %}" method="POST">
                         {% csrf_token %}

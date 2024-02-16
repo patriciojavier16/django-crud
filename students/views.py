@@ -7,7 +7,7 @@ def listStudents(request):
     return render(request, 'listStudent.html',{"students": students})
 
 def createStudent(request):
-    student = Students(dni=request.POST['dni'],nombre=request.POST['nombre'],apellido=request.POST['apellido'],genero=request.POST['genero'])
+    student = Students(dni=request.POST['dni'],nombre=request.POST['nombre'],apellido=request.POST['apellido'])
     student.save()
     return redirect('/students/')
 
