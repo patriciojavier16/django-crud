@@ -32,7 +32,7 @@
                         <p>{{student.nombre}}</p>
                         <p>{{student.apellido}}</p>
                     </div>
-                    <form action="{% url 'deleteStudent' student.id %}" method="POST">
+                    <form action="{% url 'deleteStudent' student.id %}" method="DELETE">
                         {% csrf_token %}
                         <button class="btn btn-danger btn-sm">Delete</button>
                     </form>
